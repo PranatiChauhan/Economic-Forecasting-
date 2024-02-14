@@ -1,22 +1,31 @@
-Economic Forecasting in the Pet Food Industry
-Overview
-This project aimed to predict price changes in the pet food industry using time series forecasting. We used SARIMA and neural network models to analyze the Producer Price Index for Pet Food in the U.S., with a focus on providing actionable insights for investors and businesses.
+# Economic Forecasting in the Pet Food Industry
 
-Dataset
-The dataset, sourced from Fred, includes monthly observations of the Producer Price Index from September 1985 to October 2022. The data was preprocessed and checked for null values before analysis.
+## Overview
+This repository contains the work on time series forecasting to predict price trends within the pet food market using SARIMA and neural network models. The analysis is based on historical data from the U.S. Producer Price Index for Pet Food.
 
-Methodology
-We explored several models, including:
+## Dataset
+Monthly data from September 1985 to October 2022 was utilized, which was sourced from [Fred](https://fred.stlouisfed.org/series/xxxx). Data preprocessing included null value checks and normalization.
 
-Naive and ETS methods for initial benchmarks.
-SARIMA models after performing a Box-Cox Transformation to stabilize variance and make the series more normally distributed.
-Neural Networks with a focus on a 4-2-1 architecture to accommodate the complexity of the data.
-Results
-The SARIMA(112)x(200) model and the neural network both showed promising results. The best model was selected based on the Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) values.
+## Methodology
+The approach encompassed:
+- Baseline modeling with Naive and ETS methods.
+- SARIMA after a Box-Cox Transformation for variance stabilization.
+- Neural Networks, specifically a 4-2-1 architecture, to capture the complex patterns in the data.
 
-Implications
-The forecast provided by the models can help in strategic decision-making, such as:
+## Results
+Both the SARIMA(112)x(200) and neural network models provided accurate forecasts, with model selection guided by AIC and BIC metrics.
 
-Adjusting prices in response to predicted market trends.
-Understanding the potential impact on consumers' purchasing power.
-Assisting investors in making informed decisions about their investments in the industry.
+## Implications
+The project's insights are aimed at guiding business strategy and investment decisions by forecasting market demand and pricing trends.
+
+## Installation
+Instructions on setting up the project environment and running the code can be found here.
+
+## Usage
+Examples of how to use the scripts and models are provided, including how to input new data and interpret the results.
+
+## Contributing
+Guidelines for contributing to this project are outlined, encouraging collaboration.
+
+## License
+Details about the licensing of this project can be found in the LICENSE file.
